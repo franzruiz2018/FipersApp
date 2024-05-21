@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:stretchColumns="1,2,3,4,5">
+
+    <TableRow>
+
+        <TextView
+            android:id="@+id/txt_periodo"
+            android:layout_width="0dp"
+            android:layout_weight="4"
+            android:gravity="center_horizontal"
+            android:padding="10sp"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/txt_ingresos"
+            android:layout_width="0dp"
+            android:layout_weight="4"
+            android:gravity="center_horizontal"
+            android:padding="10sp"
+            android:textSize="12sp"/>
+
+        <TextView
+            android:id="@+id/txt_gasto"
+            android:layout_width="0dp"
+            android:layout_weight="4"
+            android:gravity="center_horizontal"
+            android:padding="10sp"
+            android:textSize="12sp"/>
+
+        <TextView
+            android:id="@+id/txt_credito_gasto"
+            android:layout_width="0dp"
+            android:layout_weight="4"
+            android:gravity="center_horizontal"
+            android:padding="10sp"
+            android:textSize="12sp"/>
+
+        <TextView
+            android:id="@+id/txt_inversion"
+            android:layout_width="0dp"
+            android:layout_weight="4"
+            android:gravity="center_horizontal"
+            android:padding="10sp"
+            android:textSize="12sp"/>
+
+        <TextView
+            android:id="@+id/txt_credito_inversion"
+            android:layout_width="0dp"
+            android:layout_weight="4"
+            android:gravity="center_horizontal"
+            android:padding="10sp"
+            android:textSize="12sp"/>
+
+        <TextView
+            android:id="@+id/txt_deuda_pendiente"
+            android:layout_width="0dp"
+            android:layout_weight="4"
+            android:gravity="center_horizontal"
+            android:padding="10sp"
+            android:textSize="12sp"/>
+
+        <TextView
+            android:id="@+id/txt_deuda_pagada"
+            android:layout_width="0dp"
+            android:layout_weight="4"
+            android:gravity="center_horizontal"
+            android:padding="10sp"
+            android:textSize="12sp"/>
+
+    </TableRow>
+
+
+</TableLayout>

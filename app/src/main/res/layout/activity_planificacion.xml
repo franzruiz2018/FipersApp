@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="#ffffff"
+    android:layout_height="match_parent"
+    tools:context=".Activities.PlanificacionActivity">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="2dp"
+        android:orientation="vertical"
+        android:id="@+id/lyTitulo">
+
+
+
+
+        <TableLayout android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+
+            >
+            <TableRow  >
+
+
+                <EditText android:hint="Mes"
+                    android:id="@+id/txt_mes"
+                    android:layout_marginRight="10dp"
+                    android:width="50dp"
+                    android:maxLength="2"
+                    android:inputType="numberDecimal"
+                    android:gravity="center_horizontal"></EditText>
+
+
+
+                <EditText android:hint="Año"
+                    android:id="@+id/txt_año"
+                    android:inputType="numberDecimal"
+                    android:layout_marginRight="10dp"
+                    android:maxLength="4"
+                    android:width="70dp"
+                    android:gravity="center_horizontal"></EditText>
+
+                <Button
+                    android:id="@+id/btn_buscar"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+                    android:text="Buscar"
+                    android:minHeight="30dp"
+
+
+
+                    android:width="120dp"
+                    android:background="@color/colorButton"
+                    android:textColor="@color/cardview_light_background"></Button>
+            </TableRow>
+
+
+
+        </TableLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+
+        android:layout_marginBottom="85dp"
+        android:layout_below="@id/lyTitulo"
+
+
+        android:orientation="vertical"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:id="@+id/lyLista">
+
+
+
+        <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:stretchColumns="1,2,3,4"
+        android:layout_margin="8dp"
+
+       >
+
+        <TableRow android:background="@color/colorAccent"
+
+            >
+        <TextView android:text="Movimiento"
+            android:textSize="14sp"
+
+            android:textColor="@color/colorIcons"
+            android:layout_weight="4"
+            android:gravity="center_horizontal"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:paddingLeft="5dp"
+            android:paddingRight="5sp"
+            android:layout_width="0dp"/>
+
+            <TextView android:text="Planificado"
+                android:textSize="14sp"
+                android:textColor="@color/colorIcons"
+                android:layout_weight="4"
+                android:gravity="center_horizontal"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:paddingLeft="5dp"
+                android:paddingRight="5sp"
+                android:layout_width="0dp"/>
+            <TextView android:text="Ejecutado"
+                android:textSize="14sp"
+                android:textColor="@color/colorIcons"
+                android:layout_weight="4"
+                android:gravity="center_horizontal"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:paddingLeft="5dp"
+                android:paddingRight="5sp"
+                android:layout_width="0dp"/>
+            <TextView android:text="Pendiente"
+                android:textSize="14sp"
+                android:textColor="@color/colorIcons"
+                android:layout_weight="4"
+                android:gravity="center_horizontal"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:paddingLeft="5dp"
+                android:paddingRight="5sp"
+                android:layout_width="0dp"/>
+        </TableRow>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recycler_planificacion"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+
+
+    </TableLayout>
+
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:layout_alignParentBottom="true"
+        android:padding="20dp">
+        <Button
+
+            android:id="@+id/btnRegistrar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Registrar"
+            android:background="@color/colorAccent"
+            android:textColor="@color/cardview_light_background"
+            ></Button>
+
+    </RelativeLayout>
+
+</RelativeLayout>

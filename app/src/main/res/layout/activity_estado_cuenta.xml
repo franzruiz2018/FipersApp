@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="#ffffff"
+    android:layout_height="match_parent"
+    tools:context=".Activities.PlanificacionActivity">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="10dp"
+        android:orientation="vertical"
+        android:id="@+id/lyTitulo">
+
+
+
+
+        <TableLayout android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+
+            >
+            <TableRow  >
+
+
+
+                <EditText android:hint="Año"
+                    android:id="@+id/txt_año"
+                    android:inputType="numberDecimal"
+                    android:layout_marginRight="10dp"
+                    android:maxLength="4"
+                    android:width="70dp"
+                    android:gravity="center_horizontal"></EditText>
+
+                <Button
+                    android:id="@+id/btn_buscar"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+                    android:text="Buscar"
+
+
+
+                    android:width="120dp"
+                    android:background="@color/colorAccent"
+                    android:textColor="@color/cardview_light_background"></Button>
+            </TableRow>
+
+
+
+        </TableLayout>
+        <TextView
+            android:id="@+id/txtTituloPlanificacion"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="20dp"
+            android:text="Estado de cuenta del mes de Marzo"
+            android:textSize="14dp"
+            android:textColor="@color/colorSecondaryText"
+
+            />
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="580dp"
+            android:layout_margin="8dp"
+            android:stretchColumns="1,2,3,4,5,6,7,8"
+
+            >
+
+            <TableRow android:background="@color/primary">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="4"
+                    android:gravity="center_horizontal"
+
+                    android:padding="12sp"
+                    android:text="Periodo"
+                    android:textColor="@color/colorSecondaryText"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="4"
+                    android:gravity="center_horizontal"
+                    android:padding="12sp"
+                    android:text="Ingreso"
+                    android:textColor="@color/colorSecondaryText"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="4"
+                    android:gravity="center_horizontal"
+                    android:padding="12sp"
+                    android:text="Gasto"
+                    android:textColor="@color/colorSecondaryText"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="4"
+                    android:gravity="center_horizontal"
+                    android:padding="12sp"
+                    android:text="Credito Gasto"
+                    android:textColor="@color/colorSecondaryText"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="4"
+                    android:gravity="center_horizontal"
+                    android:padding="12sp"
+                    android:text="Inversión"
+                    android:textColor="@color/colorSecondaryText"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="4"
+                    android:gravity="center_horizontal"
+                    android:padding="12sp"
+                    android:text="Credito Inversion"
+                    android:textColor="@color/colorSecondaryText"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="4"
+                    android:gravity="center_horizontal"
+                    android:padding="12sp"
+                    android:text="Deuda Pendiente"
+                    android:textColor="@color/colorSecondaryText"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="4"
+                    android:gravity="center_horizontal"
+                    android:padding="12sp"
+                    android:text="Deuda Pagada"
+                    android:textColor="@color/colorSecondaryText"
+                    android:textSize="12sp" />
+            </TableRow>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recycler_estado_cuenta"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+
+        </TableLayout>
+    </LinearLayout>
+
+
+
+
+
+</ScrollView>

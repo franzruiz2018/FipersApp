@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    tools:context=".Activities.MovimientosListaPorMesActivity">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:orientation="vertical"
+        android:id="@+id/txtSeccionTitulo">
+
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+
+            android:stretchColumns="0,1"
+
+            >
+            <TableRow
+                >
+
+                <TextView
+                    android:id="@+id/txtMontoEjecutado"
+                    android:padding="10dp"
+                    android:text="Ejecutado: 500.00"
+                    android:background="@color/colorPrimaryLight"
+android:gravity="center"
+android:layout_column="0"
+                    android:textSize="16dp" />
+                <TextView
+                    android:id="@+id/txtMontoPlanificado"
+                    android:text="Planificado: 300:00"
+                    android:textSize="16dp"
+                    android:padding="10dp"
+                    android:layout_column="1"
+                    android:gravity="center"
+                    android:background="@color/colorPrimaryLight2"
+
+
+                    />
+            </TableRow>
+
+        </TableLayout>
+
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="85dp"
+        android:layout_below="@+id/txtSeccionTitulo"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:orientation="vertical">
+        <ListView
+            android:id="@+id/lvMovimientos"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:layout_alignParentBottom="true"
+        android:padding="20dp">
+        <Button
+
+            android:id="@+id/btnRegresar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Planificación Mensual"
+            android:background="@color/colorAccent"
+            android:textColor="@color/cardview_light_background"
+            ></Button>
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

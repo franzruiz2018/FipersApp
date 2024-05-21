@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/lySaldo"
+        android:layout_width="fill_parent"
+        android:layout_height="100dp"
+        android:layout_margin="20dp"
+
+        android:orientation="vertical"
+        android:background="@color/colorCard">
+
+        <ImageView
+            android:id="@+id/imgCuentas"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dp"
+            app:srcCompat="@drawable/ic_icono_tarjeta_debito_blanco"
+            tools:ignore="VectorDrawableCompat" />
+
+        <TextView
+            android:id="@+id/txtNombreCuenta"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="55dp"
+            android:layout_centerVertical="true"
+            android:text="Interbank"
+            android:textColor="@color/colorTextWhite"
+            android:textSize="30dp" />
+
+
+            <TextView
+                android:id="@+id/txtSaldo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="20dp"
+                android:text="S/. 0.00"
+                android:textColor="@color/colorTextWhite"
+                android:textSize="25dp" />
+            <TextView
+                android:id="@+id/txtDescripcionSaldo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="20dp"
+                android:layout_alignParentRight="true"
+                android:layout_below="@id/txtSaldo"
+                android:text="Saldo disponible"
+                android:textColor="@color/colorPrimaryLight2"
+                android:textSize="14dp" />
+
+
+
+
+
+
+    </RelativeLayout>
+
+</LinearLayout>

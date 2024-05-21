@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/menu_cuentas"
+        android:title="Cuentas"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/menu_planificacion"
+        android:title="Planificación Mensual"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/estado_cuenta"
+        android:title="Estado de Cuenta"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/menu_logout"
+        android:title="Cerrar Sesión"
+        app:showAsAction="never" />
+</menu>

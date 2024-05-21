@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activities.RegistrarMovimiento">
+
+
+    <RelativeLayout
+        android:id="@+id/lySaldo"
+        android:layout_width="fill_parent"
+        android:layout_height="100dp"
+        android:layout_margin="20dp"
+        android:orientation="vertical"
+        android:background="@color/colorCard">
+
+        <TextView
+            android:id="@+id/txtNombreCuenta"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="20dp"
+            android:layout_centerVertical="true"
+            android:text="Interbank"
+            android:textColor="#FFFFFF"
+            android:textSize="30dp" />
+
+        <TextView
+            android:id="@+id/txtSaldo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="20dp"
+            android:text="S/. 0.00"
+            android:textColor="#FFFFFF"
+            android:textSize="35dp" />
+        <TextView
+            android:id="@+id/txtDescripcionSaldo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="20dp"
+            android:layout_alignParentRight="true"
+            android:layout_below="@id/txtSaldo"
+            android:text="Saldo disponible"
+            android:textColor="#FFFFFF"
+            android:textSize="14dp" />
+    </RelativeLayout>
+
+
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/lySaldo"
+        android:layout_marginBottom="40dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:orientation="vertical">
+
+
+
+<!--        <EditText-->
+<!--            android:id="@+id/txtHora"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_marginTop="20dp"-->
+<!--            android:focusable="false"-->
+<!--            android:hint="Hora de operación"-->
+<!--            android:inputType="date" />-->
+        <EditText
+            android:id="@+id/txtFecha"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:hint="Fecha de operación"
+            android:focusable="false"
+            android:inputType="date" />
+        <EditText
+            android:id="@+id/txtMonto"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:hint="Monto"
+            android:inputType="numberDecimal" />
+
+        <EditText
+            android:id="@+id/txtDescripcion"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:gravity="start|top"
+            android:hint="Descripción"
+            android:inputType="textMultiLine"
+            android:maxLength="200" />
+        <Spinner
+            android:spinnerMode="dialog"
+            android:prompt="@string/seleccione_una_categoria"
+            android:layout_marginTop="20dp"
+            android:id="@+id/spTipoGasto"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            />
+        <Button
+            android:id="@+id/btnRegistrarMovimiento"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:background="@color/colorButton"
+            android:text="Registrar"
+            android:textColor="@color/colorButtonText" />
+
+
+
+    </LinearLayout>
+
+
+
+</RelativeLayout>

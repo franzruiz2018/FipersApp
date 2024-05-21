@@ -1,0 +1,17 @@
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Otros/Fipers/Fipers Movil/Fipers Movil/FiperE1/app/src/main/res/layout/activity_cuentas.xml" value="0.2" />
+        <entry key="..\:/Otros/Fipers/Fipers Movil/Fipers Movil/FiperE1/app/src/main/res/layout/item_listviews_cuentas.xml" value="0.22418478260869565" />
+        <entry key="..\:/Otros/Fipers/Fipers Movil/Fipers Movil/FiperE1/app/src/main/res/layout/item_listviews_movimiento.xml" value="0.22418478260869565" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_17" default="true" project-jdk-name="jbr-17" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>
